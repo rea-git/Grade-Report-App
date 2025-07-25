@@ -9,8 +9,10 @@ A Flask-based web application to plot mathematical equations and perform basic m
 - Uses Matplotlib for plotting graphs
 
 ## 🖼️ Screenshots
-![Equation Plot](images/equation_plot.png)
-![Matrix Operation](images/matrix_operation.png)
+![graph input](image/graph-input.png)
+![Graph output](image/graph-output.png)
+![matrix input](image/matrix-input.png)
+![matrix output](image/matrix-output.png)
 
 ## 💻 Tech Stack
 - Python
