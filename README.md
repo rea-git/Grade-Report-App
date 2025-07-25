@@ -1,6 +1,6 @@
 # Student Marks Analysis Tool
 
-A simple Python project that reads student and course marks from CSV files and provides performance analysis.
+A simple Python project that reads student and course marks from CSV files and provides performance analysis using flask as backend and HTML(jinja2 template) as front-end.
 
 ## 🔧 Features
 - Reads student and course data using file handling (no external libraries)
@@ -23,5 +23,5 @@ A simple Python project that reads student and course marks from CSV files and p
 
 ## 🚀 Run the Script
 ```bash
-python main.py
+python app.py
 
