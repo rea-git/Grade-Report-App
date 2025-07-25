@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Graph</title>
+</head>
+<body>
+        <h5>
+        <a href="/matrixop">Go To: Matrix operation</a>
+    </h5>
+    <h1>Graph Plotting</h1>
+    <form action="/graph" method="post">
+        <label>Enter Equation:</label>
+        <input type='text' name='eqn'> <br>
+
+        <label> Enter Range of graph:<label><br>
+        <input type = 'number' name ='min'>
+        <input type = 'number' name ='max'><br>
+        
+        <h2>Choose Plotting Style</h2>
+        <label>Line Plot</label>
+        <input type='radio' name='plotStyle', value='line'><br>
+
+        <label>Scatter Plot</label>
+        <input type='radio' name='plotStyle', value='scatter'><br>
+
+        <input type = 'submit' value ='submit'>
+    </form>
+    {%if graph%}
+     <h2>Here is your graph:</h2>
+        <img src="{{ graph }}" alt="Graph">
+    {%endif%}
+</body>
+</html>

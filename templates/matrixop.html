@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Matrix Operation</title>
+</head>
+<body>
+    <h1> matrix operation </h1>
+    <form action=/matrixop method ="post" >
+        <!--Matrix 1-->
+        <h3>matrix 1</h3>
+        <input type='number' name = 'a11'> <input type='number' name = 'a12'>
+        <input type='number' name = 'a13'>
+        <br> 
+        <input type='number' name = 'a21'> <input type='number' name = 'a22'>
+        <input type='number' name = 'a23'>
+        <br>
+        <input type='number' name = 'a31'> <input type='number' name = 'a32'>
+        <input type='number' name = 'a33'>
+        <br><br>
+<!--Matrix 2-->
+<h3>Matrix 2</h3>
+         <input type='number' name = 'b11'> <input type='number' name = 'b12'>
+        <input type='number' name = 'b13'>
+        <br> 
+        <input type='number' name = 'b21'> <input type='number' name = 'b22'>
+        <input type='number' name = 'b23'>
+        <br>
+        <input type='number' name = 'b31'> <input type='number' name = 'b32'>
+        <input type='number' name = 'b33'>
+        <br>
+
+        <label> Choose operation<label>
+            <label> Addition<label>
+        <input type='radio' name = 'operation' value='add'> <br>
+        <label> Subtraction<label>
+        <input type='radio' name = 'operation'  value='sub'> <br>
+        <label> Multiplication<label>
+        <input type='radio' name = 'operation'  value='multiplication'><br>
+        <input type='submit' name = 'operation'  value='submit'><br>
+    </form>
+    {%if submit%}
+        <table >
+            <tr>
+                <td>{{c11}}</td><td>{{c12}}</td><td>{{c13}}</td>
+            </tr>
+            <tr>
+                <td>{{c21}}</td><td>{{c22}}</td><td>{{c23}}</td>
+            </tr>
+            <tr>
+                <td>{{c31}}</td><td>{{c32}}</td><td>{{c33}}</td>
+            </tr>
+        </table>
+    {% endif %}
+    
+</body>
+</html>
